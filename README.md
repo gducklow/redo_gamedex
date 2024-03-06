@@ -1,34 +1,37 @@
-# Group Project 1 "Chef's Vision"
+# GameDex
 
-## Description
-This application allows the user to type in a ingredient and find dishies that use that certain ingredient. It will list out all the meals that use that ingredient, the user can than selet to view the recipe which will list all the ingredients that is needed and instructions how how to cook the dish. The user also have the option to save all their recipes wheather they are planning to make the dish now or save it for a future date. 
+GameDex is a web application that allows users to manage their video game library, explore new games, and connect with other gamers.
+[Visit GameDex](https://gamedex-project.onrender.com)
 
-This application will also allow the user to look up nutrition facts. This will help to informed you about food products that you are putting into your body. Using this nutrition fact search will help you make a healthier choice for your lifestyle.  
+![Alt Text](Images/GameDex%20Screenshot.png)
+## Table of Contents
 
+- [GameDex](#gamedex)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Usage](#usage)
+  - [Technologies Used](#technologies-used)
 
-# Credits
+## Features
 
-Jakki Yang - HTML, CSS
-Cian Cagemoe - JavaScript
-Gavin Ducklow -  HTML, CSS
-Alex Majorowicz - JavaScript
-Xeng Xiong - JavaScript, HTML, CSS
+- **User Authentication**: Users can create accounts, log in, and log out securely.
+- **Game Library**: Users can add and remove games to/from their library.
+- **Explore Games**: Users can explore a collection of games, view details, and read reviews.
+- **Responsive Design**: The application is designed to work seamlessly on various devices.
 
-# Used APIS: 
-# https://www.themealdb.com/api.php - mealdb API 
-# U.S. Department of Agriculture, Agricultural Research Service. FoodData Central, 2019. fdc.nal.usda.gov. - FDC database API for finding nutrition of food items 
-# https://materializecss.com/buttons.html - materialize used for GUI developement.
-          
+## Usage
 
+1. **Sign Up / Log In**: Create an account or log in if you already have one.
+2. **Explore Games**: Browse and explore a variety of games available in the app.
+3. **Game Library**: Add your favorite games to your library or remove them.
+4. **Search**: Use the search feature to find specific games.
 
+## Technologies Used
 
-# Screen Shot of Application
-![image](https://github.com/Koeboldt/ProupGroject/assets/142840132/07b7cb4e-15a3-4615-8563-55f75e56dce8)
-
-
-# Link to deployed application
-
-https://koeboldt.github.io/ProupGroject/
-
-# Reference
-Refer to license in the repo.
+- **Node.js**: Backend JavaScript runtime.
+- **Express.js**: Web application framework for Node.js.
+- **Sequelize**: Promise-based Node.js ORM for PostgreSQL or MySQL.
+- **Handlebars**: Templating engine for rendering views.
+- **Bootstrap**: Front-end component library for responsive design.
+- **Luxon**: A library for creating and formatting dates and times in Javascript.
+- **Bcrypt**: Password hashing library for securing user passwords.
