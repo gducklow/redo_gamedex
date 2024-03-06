@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <!-- Section for displaying recipes -->
+    <div id="recipe-display">
+      <div class="recipe-item">
+        <h3 id="recipeName"></h3>
+        <img id="recipeImg" />
+        <h4>Ingredients:</h4>
+        <ul id="ingredientsList"></ul>
+        <h4>Instructions:</h4>
+        <p id="recipeInstructions"></p>
+        <button id="saveRecipe">Save Recipe</button>
+        <button id="closeButton">Close</button>
+      </div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h3 id="ingredient"></h3>
+        <h4 id="servingSize"></h4>
+        <!-- Message content goes here -->
+        <ul id="nutrients"></ul>
+        <!-- Close button for the modal -->
+        <button class="close">Close</button>
+      </div>
+    </div>
+    <script src="./assets/js/config.js"></script>
+    <script src="./assets/js/scriptMealDB.js"></script>
+    <script src="./assets/js/scriptFDC.js"></script>
+    <script>
+      let querrySearch = new URLSearchParams(window.location.search);
+      let ID = querrySearch.get("mealId");
+      let searchType = querrySearch.get("searchType");
+      let searchQuerry = querrySearch.get("searchQuerry");
+      console.log(searchType);
+      console.log(ID);
+      displayRecipe(ID);
+      $("#saveRecipe").on("click", saveRecipe);
+      $(".close").on("click", () => {
+        //Close the modal when the user clicks on the "x" button
+        $("#modal").css("display", "none");
+      });
+      $("#closeButton").on("click", () => {
+        window.location =
+          "index.html?searchType=" +
+          searchType +
+          "&searchQuerry=" +
+          searchQuerry;
+      });
+      $(window).on("click", (event) => {
+        //Close the modal when the user clicks anywhere outside of the modal
+        if ($(event.target).attr("id") == "modal") {
+          $("#modal").css("display", "none");
+        }
+      });
+    </script>
+  </body>
+</html>
