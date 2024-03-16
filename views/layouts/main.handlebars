@@ -35,6 +35,24 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+         
+         <!-- Search form -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              id="gameSearch"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success"
+              id="searchBtn"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
 
         <!-- Navbar content -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -60,25 +78,6 @@
               </li>
             {{/if}}
           </ul>
-
-          <!-- Search form -->
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              id="gameSearch"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button
-              class="btn btn-outline-success"
-              id="searchBtn"
-              type="submit"
-            >
-              Search
-            </button>
-          </form>
-        </div>
       </div>
     </nav>
 

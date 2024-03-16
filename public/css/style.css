@@ -1,3 +1,13 @@
 #logout:hover {
   cursor: pointer;
 }
+.nav {
+  background-color: aliceblue;
+}
+a {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+}
+
+
+
