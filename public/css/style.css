@@ -1,8 +1,10 @@
 #logout:hover {
   cursor: pointer;
 }
-.nav {
-  background-color: aliceblue;
+/* override color */
+forced-color-adjust: #212529;
+.navbar {
+  background-color: rgb(255, 255, 255);
 }
 a {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
