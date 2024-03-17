@@ -4,7 +4,10 @@
 /* override color */
 forced-color-adjust: #212529;
 .navbar {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(107, 161, 223);
+}
+.container-fluid{
+  background-color: rgb(107, 161, 223);
 }
 a {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
