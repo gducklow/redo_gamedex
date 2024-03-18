@@ -9,6 +9,7 @@ forced-color-adjust: #212529;
 .container-fluid{
   background-color: rgb(107, 161, 223);
   justify-content: end;
+  float: inline-end;
 }
 a {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -40,4 +41,5 @@ a {
 }
 .card-body {
   background-color: lightblue;
+  color: lightblue;
 }
