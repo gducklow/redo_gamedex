@@ -54,4 +54,6 @@ a, p, h5 {
   font-weight: 300;
   font-style: normal;
 }
-
+.card-img-top {
+  height: 10%;
+}
