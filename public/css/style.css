@@ -12,7 +12,7 @@ forced-color-adjust: #212529;
   float: inline-end;
 }
 a, p, h5 {
-  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
   color: black;
 
 }
@@ -45,7 +45,7 @@ a, p, h5 {
   color: lightblue;
 }
 .img {
-  max-height: 50px;
+  height: 2px;
 }
 .roboto-light {
   font-family: "Roboto", sans-serif;
