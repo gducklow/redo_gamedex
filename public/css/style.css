@@ -10,7 +10,8 @@ forced-color-adjust: #212529;
 .container-fluid{
   background-color: rgb(107, 161, 223);
   justify-content: end;
-  float: inline-end;
+  flex:auto;
+  float: right;
 }
 a, p, h5 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
